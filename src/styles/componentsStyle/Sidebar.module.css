@@ -1,0 +1,26 @@
+.sidebar {
+  width: 30%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar_title {
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  padding: 16px 24px;
+  margin: 0;
+}
+
+.link {
+  padding: 14px 48px;
+  text-decoration: none;
+  font-family: "Inter";
+  color: #71717a;
+}
+
+.link:hover {
+  background-color: #fafafa;
+  color: #f97316;
+}
