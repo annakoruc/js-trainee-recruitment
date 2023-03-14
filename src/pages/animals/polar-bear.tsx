@@ -3,9 +3,9 @@ import { AnimalCard } from "@/components/AnimalCard";
 
 const PolarBear = () => {
   const text = (
-    <text>
+    <h1>
       Say hello to your new <span>friend</span>
-    </text>
+    </h1>
   );
 
   return (

@@ -15,7 +15,8 @@ a {
   color: #71717a;
 }
 
-a:hover {
+a:hover,
+.active_link {
   background-color: #fafafa;
   color: #f97316;
 }

@@ -3,9 +3,9 @@ import React from "react";
 
 const Cheetah = () => {
   const text = (
-    <text>
+    <h1>
       No petting before <span>eating</span>
-    </text>
+    </h1>
   );
   return <AnimalCard src="/img/cheetah.png" animal="cheetah" text={text} />;
 };

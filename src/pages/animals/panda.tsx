@@ -3,9 +3,9 @@ import { AnimalCard } from "@/components/AnimalCard";
 
 const Panda = () => {
   const text = (
-    <text>
+    <h1>
       Eating always with <span>pleasure</span>
-    </text>
+    </h1>
   );
   return <AnimalCard src="/img/panda.png" animal="panda" text={text} />;
 };
