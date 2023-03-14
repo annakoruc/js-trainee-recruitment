@@ -6,28 +6,14 @@ import styles from "../styles/componentsStyle/Sidebar.module.css";
 export const SideBar = () => {
   return (
     <nav className={styles.sidebar}>
-      <p className={styles.sidebar_title}>Your new gang</p>
-      <Link className={styles.link} href={"/animals/polar-bear"}>
-        Polar Bear
-      </Link>
-      <Link className={styles.link} href={"/animals/cheetah"}>
-        Cheetah
-      </Link>
-      <Link className={styles.link} href={"/animals/panda"}>
-        Panda
-      </Link>
-      <Link className={styles.link} href={"/animals/fox"}>
-        Fox
-      </Link>
-      <Link className={styles.link} href={"/animals/squirrel"}>
-        Squirrel
-      </Link>
-      <Link className={styles.link} href={"/animals/butterfly"}>
-        Butterfly
-      </Link>
-      <Link className={styles.link} href={"/animals/elephant"}>
-        Elephant
-      </Link>
+      <p>Your new gang</p>
+      <Link href={"/animals/polar-bear"}>Polar Bear</Link>
+      <Link href={"/animals/cheetah"}>Cheetah</Link>
+      <Link href={"/animals/panda"}>Panda</Link>
+      <Link href={"/animals/fox"}>Fox</Link>
+      <Link href={"/animals/squirrel"}>Squirrel</Link>
+      <Link href={"/animals/butterfly"}>Butterfly</Link>
+      <Link href={"/animals/elephant"}>Elephant</Link>
     </nav>
   );
 };

@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+
+  background-color: #f5f5f5;
+  font-family: "Inter";
+}
+
+a {
+  padding: 14px 48px;
+  text-decoration: none;
+  font-family: "Inter";
+  color: #71717a;
+}
+
+a:hover {
+  background-color: #fafafa;
+  color: #f97316;
+}
+
+span {
+  color: #f97316;
+}
