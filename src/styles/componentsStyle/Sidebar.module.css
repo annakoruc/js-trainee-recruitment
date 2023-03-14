@@ -1,8 +1,12 @@
 .sidebar {
   width: 318px;
+  height: 500px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+
+  position: sticky;
+  top: 48px;
 }
 
 .sidebar p {

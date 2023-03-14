@@ -1,7 +1,7 @@
 import React from "react";
 import { AnimalCard } from "@/components/AnimalCard";
 
-const Squirrel = () => {
+export const Squirrel = () => {
   const text = (
     <h1>
       Staying <span>curious</span>
@@ -9,5 +9,3 @@ const Squirrel = () => {
   );
   return <AnimalCard src="/img/squirrel.png" animal="squirrel" text={text} />;
 };
-
-export default Squirrel;

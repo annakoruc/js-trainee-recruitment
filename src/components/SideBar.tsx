@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { paths } from "../config/paths";
 
 import styles from "../styles/componentsStyle/Sidebar.module.css";
+import { Butterfly } from "./animals";
 
 export const SideBar = () => {
   let router = useRouter();
@@ -13,43 +14,43 @@ export const SideBar = () => {
       <p>Your new gang</p>
       <Link
         className={router.pathname === paths.bear ? "active_link" : ""}
-        href={paths.bear}
+        href="#Polar Bear"
       >
         Polar Bear
       </Link>
       <Link
         className={router.pathname == paths.cheetah ? "active_link" : ""}
-        href={paths.cheetah}
+        href="#cheetah"
       >
         Cheetah
       </Link>
       <Link
         className={router.pathname == paths.panda ? "active_link" : ""}
-        href={paths.panda}
+        href="#panda"
       >
         Panda
       </Link>
       <Link
         className={router.pathname == paths.fox ? "active_link" : ""}
-        href={paths.fox}
+        href="#fox"
       >
         Fox
       </Link>
       <Link
         className={router.pathname == paths.squirrel ? "active_link" : ""}
-        href={paths.squirrel}
+        href="#squirrel"
       >
         Squirrel
       </Link>
       <Link
         className={router.pathname == paths.butterfly ? "active_link" : ""}
-        href={paths.butterfly}
+        href="#butterfly"
       >
         Butterfly
       </Link>
       <Link
         className={router.pathname == paths.elephant ? "active_link" : ""}
-        href={paths.elephant}
+        href="#elephant"
       >
         Elephant
       </Link>

@@ -11,9 +11,11 @@ type CardProps = {
 
 export const AnimalCard = ({ animal, text, src }: CardProps) => {
   return (
-    <div className={styles.card}>
-      <p>{animal.toUpperCase()}</p>
-      {text}
+    <div className={styles.card} id={animal}>
+      <main>
+        <p>{animal.toUpperCase()}</p>
+        {text}
+      </main>
       <Image src={src} width={817} height={431} alt={animal} />
     </div>
   );

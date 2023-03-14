@@ -1,7 +1,7 @@
 import React from "react";
 import { AnimalCard } from "@/components/AnimalCard";
 
-const Fox = () => {
+export const Fox = () => {
   const text = (
     <h1>
       Sometimes quite <span>suspicious</span>
@@ -9,5 +9,3 @@ const Fox = () => {
   );
   return <AnimalCard src="/img/fox.png" animal="fox" text={text} />;
 };
-
-export default Fox;
