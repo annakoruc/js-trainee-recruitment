@@ -7,5 +7,12 @@ export const Cheetah = () => {
       No petting before <span>eating</span>
     </h1>
   );
-  return <AnimalCard src="/img/cheetah.png" animal="cheetah" text={text} />;
+  return (
+    <AnimalCard
+      src="/img/cheetah.png"
+      animal="cheetah"
+      id="cheetah"
+      text={text}
+    />
+  );
 };

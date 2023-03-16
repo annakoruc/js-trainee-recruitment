@@ -9,6 +9,11 @@ export const PolarBear = () => {
   );
 
   return (
-    <AnimalCard src="/img/polar-bear.png" animal="Polar Bear" text={text} />
+    <AnimalCard
+      src="/img/polar-bear.png"
+      animal="Polar Bear"
+      id="bear"
+      text={text}
+    />
   );
 };

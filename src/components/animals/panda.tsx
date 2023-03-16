@@ -7,5 +7,7 @@ export const Panda = () => {
       Eating always with <span>pleasure</span>
     </h1>
   );
-  return <AnimalCard src="/img/panda.png" animal="panda" text={text} />;
+  return (
+    <AnimalCard src="/img/panda.png" animal="panda" id="panda" text={text} />
+  );
 };

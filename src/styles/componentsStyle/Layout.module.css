@@ -6,7 +6,7 @@
 
   display: flex;
   background-color: #f5f5f5;
-  margin: 48px auto;
+  margin-bottom: 64px;
   justify-content: center;
   gap: 105px;
 }

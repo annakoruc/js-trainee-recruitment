@@ -1,59 +1,44 @@
-import React, { useRef } from "react";
-import Link from "next/link";
+import React, { useRef, useState } from "react";
 import { useRouter } from "next/router";
-import { paths } from "../config/paths";
 
 import styles from "../styles/componentsStyle/Sidebar.module.css";
-import { Butterfly } from "./animals";
+
+const navList = [
+  { name: "Polar Bear", id: "#bear" },
+  { name: "cheetah", id: "#cheetah" },
+  { name: "panda", id: "#panda" },
+  { name: "fox", id: "#fox" },
+  { name: "squirrel", id: "#squirrel" },
+  { name: "butterfly", id: "#butterfly" },
+  { name: "elephant", id: "#elephant" },
+];
 
 export const SideBar = () => {
+  const [selectedLink, setSelectedLink] = useState("");
   let router = useRouter();
 
   return (
     <nav className={styles.sidebar}>
       <p>Your new gang</p>
-      <Link
-        className={router.pathname === paths.bear ? "active_link" : ""}
-        href="#Polar Bear"
-      >
-        Polar Bear
-      </Link>
-      <Link
-        className={router.pathname == paths.cheetah ? "active_link" : ""}
-        href="#cheetah"
-      >
-        Cheetah
-      </Link>
-      <Link
-        className={router.pathname == paths.panda ? "active_link" : ""}
-        href="#panda"
-      >
-        Panda
-      </Link>
-      <Link
-        className={router.pathname == paths.fox ? "active_link" : ""}
-        href="#fox"
-      >
-        Fox
-      </Link>
-      <Link
-        className={router.pathname == paths.squirrel ? "active_link" : ""}
-        href="#squirrel"
-      >
-        Squirrel
-      </Link>
-      <Link
-        className={router.pathname == paths.butterfly ? "active_link" : ""}
-        href="#butterfly"
-      >
-        Butterfly
-      </Link>
-      <Link
-        className={router.pathname == paths.elephant ? "active_link" : ""}
-        href="#elephant"
-      >
-        Elephant
-      </Link>
+      <ul>
+        {navList.map((val, key) => {
+          return (
+            <li
+              className={`row ${selectedLink === val.id ? "active_link" : ""}`}
+              key={key}
+              onClick={() => {
+                setSelectedLink(val.id);
+
+                document
+                  .querySelector(val.id)!
+                  .scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              {val.name}
+            </li>
+          );
+        })}
+      </ul>
     </nav>
   );
 };

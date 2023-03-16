@@ -7,5 +7,5 @@ export const Fox = () => {
       Sometimes quite <span>suspicious</span>
     </h1>
   );
-  return <AnimalCard src="/img/fox.png" animal="fox" text={text} />;
+  return <AnimalCard src="/img/fox.png" animal="fox" id="fox" text={text} />;
 };

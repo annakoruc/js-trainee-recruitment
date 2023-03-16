@@ -7,11 +7,12 @@ type CardProps = {
   animal: string;
   text: string | JSX.Element;
   src: string | HTMLImageElement;
+  id: string;
 };
 
-export const AnimalCard = ({ animal, text, src }: CardProps) => {
+export const AnimalCard = ({ animal, text, src, id }: CardProps) => {
   return (
-    <div className={styles.card} id={animal}>
+    <div className={styles.card} id={id}>
       <main>
         <p>{animal.toUpperCase()}</p>
         {text}

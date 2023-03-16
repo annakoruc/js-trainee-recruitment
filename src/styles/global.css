@@ -8,14 +8,21 @@ body {
   font-family: "Inter";
 }
 
-a {
+ul {
+  padding: 0;
+}
+
+li {
+  text-transform: capitalize;
+  list-style-type: none;
   padding: 14px 48px;
   text-decoration: none;
   font-family: "Inter";
   color: #71717a;
 }
 
-a:hover,
+li:hover,
+li:focus,
 .active_link {
   background-color: #fafafa;
   color: #f97316;

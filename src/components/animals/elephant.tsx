@@ -7,5 +7,12 @@ export const Elephant = () => {
       It makes a <span>huge</span> difference
     </h1>
   );
-  return <AnimalCard src="/img/elephant.png" animal="elephant" text={text} />;
+  return (
+    <AnimalCard
+      src="/img/elephant.png"
+      animal="elephant"
+      id="elephant"
+      text={text}
+    />
+  );
 };

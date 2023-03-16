@@ -7,5 +7,12 @@ export const Squirrel = () => {
       Staying <span>curious</span>
     </h1>
   );
-  return <AnimalCard src="/img/squirrel.png" animal="squirrel" text={text} />;
+  return (
+    <AnimalCard
+      src="/img/squirrel.png"
+      animal="squirrel"
+      id="squirrel"
+      text={text}
+    />
+  );
 };
