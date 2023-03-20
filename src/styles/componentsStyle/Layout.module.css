@@ -1,12 +1,11 @@
 .layout {
   width: 1440px;
-
   height: 100%;
-  position: relative;
 
   display: flex;
   background-color: #f5f5f5;
   margin-bottom: 64px;
   justify-content: center;
+
   gap: 105px;
 }

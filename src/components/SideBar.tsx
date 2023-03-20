@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import useHeadings from "@/hooks/useHeadings";
 import useScrollSpy from "@/hooks/useScrollSpy";
 
