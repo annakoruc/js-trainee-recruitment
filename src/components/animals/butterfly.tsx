@@ -8,12 +8,5 @@ export const Butterfly = () => {
     </h1>
   );
 
-  return (
-    <AnimalCard
-      src="/img/butterfly.png"
-      animal="butterfly"
-      id="butterfly"
-      text={text}
-    />
-  );
+  return <AnimalCard src="/img/butterfly.png" animal="butterfly" text={text} />;
 };

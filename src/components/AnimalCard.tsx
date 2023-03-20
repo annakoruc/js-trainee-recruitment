@@ -8,12 +8,11 @@ type CardProps = {
   animal: string;
   text: string | JSX.Element;
   src: string | HTMLImageElement;
-  id: string;
 };
 
-export const AnimalCard = ({ animal, text, src, id }: CardProps) => {
+export const AnimalCard = ({ animal, text, src }: CardProps) => {
   return (
-    <div className={styles.card} id={id}>
+    <div className={styles.card}>
       <main>
         <Heading as="h2">{animal.toUpperCase()}</Heading>
         {text}
