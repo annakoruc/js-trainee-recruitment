@@ -1,0 +1,22 @@
+.card {
+  padding-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.card h2 {
+  font-size: 12px;
+  margin: 0;
+}
+
+.card main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

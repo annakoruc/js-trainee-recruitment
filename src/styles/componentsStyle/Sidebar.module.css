@@ -1,0 +1,18 @@
+.sidebar {
+  width: 318px;
+  height: 500px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+
+  position: sticky;
+  top: 48px;
+}
+
+.sidebar p {
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  padding: 16px 24px;
+  margin: 0;
+}
